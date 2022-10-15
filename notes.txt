@@ -1,0 +1,12 @@
+https://webassembly.github.io/wabt/demo/wat2wasm/
+
+to run wasm code run command "xxd -g1 sum.wasm"
+
+
+to compile and build wasm automatically we are adding dependency in cargo.toml file "wasm-bindgen = "0.2.63" "
+
+also we are installing "wasm-pack" using command "cargo install wasm-pack"
+if it gets failed to install use "cargo install wasm-pack --force"
+
+we use command "wasm-pack build --target web" to build our rust code to JS
+"wasm_bindgen" in dependency helps in sharing code
